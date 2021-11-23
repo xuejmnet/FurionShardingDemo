@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurionShardingDemo", "FurionShardingDemo\FurionShardingDemo.csproj", "{58803FA6-A768-44B3-A67F-E5F3B7FC4F31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58803FA6-A768-44B3-A67F-E5F3B7FC4F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58803FA6-A768-44B3-A67F-E5F3B7FC4F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58803FA6-A768-44B3-A67F-E5F3B7FC4F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58803FA6-A768-44B3-A67F-E5F3B7FC4F31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAB999D8-F7C8-4A0B-804D-860B7A68124D}
+	EndGlobalSection
+EndGlobal
