@@ -47,5 +47,19 @@ namespace FurionShardingDemo.Controllers
             var list = await _todoItemRepository.AsQueryable().ToListAsync();
             return Ok(list);
         }
+        [HttpGet]
+        public async Task<IActionResult> First([FromQuery]string id)
+        {
+            var todoItem = await _todoItemRepository.FirstOrDefaultAsync(o => o.Id == id);
+            return Ok(todoItem);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Update([FromQuery]string id)
+        {
+            var todoItem = await _todoItemRepository.FirstOrDefaultAsync(o => o.Id == id);
+            todoItem.Name = "123";
+            await _todoItemRepository.SaveNowAsync();
+            return Ok(todoItem);
+        }
     }
 }

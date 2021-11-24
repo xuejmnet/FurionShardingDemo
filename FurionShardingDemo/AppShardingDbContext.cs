@@ -16,7 +16,8 @@ namespace FurionShardingDemo
         {
         }
     }
-    public abstract class AppShardingDbContext<TDbContext, TDbContextLocator> : AppDbContext<TDbContext, TDbContextLocator>, IShardingDbContext, ISupportShardingTransaction, ISupportShardingReadWrite
+    public abstract class AppShardingDbContext<TDbContext, TDbContextLocator> 
+        : AppDbContext<TDbContext, TDbContextLocator>, IShardingDbContext, ISupportShardingTransaction, ISupportShardingReadWrite
                                 where TDbContext : DbContext
         where TDbContextLocator : class, IDbContextLocator
     {
